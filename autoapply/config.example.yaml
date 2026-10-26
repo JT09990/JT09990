@@ -1,0 +1,26 @@
+profile:
+  first_name: Jane
+  last_name: Doe
+  email: jane@example.com
+  phone: "5551234567"
+  resume_path: ~/documents/resume.pdf
+
+search:
+  keywords: ["python developer", "backend engineer"]
+  locations: ["Remote"]
+  title_include: ["python", "backend"]
+  exclude: ["senior director", "intern", "unpaid"]
+
+limits:
+  daily_cap: 15
+  min_delay_seconds: 4
+  max_delay_seconds: 11
+
+sources: [linkedin, indeed]
+
+# regex on the form question -> answer. Unmatched questions are asked in the terminal.
+answers:
+  "years.*experience": "5"
+  "authorized to work": "Yes"
+  "require.*sponsorship": "No"
+  "linkedin": "https://www.linkedin.com/in/your-profile"
